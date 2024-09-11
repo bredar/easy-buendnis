@@ -7,9 +7,10 @@ import * as styles from "../components/index.module.css"
 const ContactPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <h1>Contact Us</h1>
+      <h1>Kontakt</h1>
       <p className={styles.intro}>
-        We'd love to hear from you. Please fill out the form below.
+        Wir würden gerne von Ihnen hören. Bitte füllen Sie das untenstehende
+        Formular aus.
       </p>
     </div>
     <div className={styles.mainContent}>
@@ -22,33 +23,33 @@ const ContactPage = () => (
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
-            Your Name: <input type="text" name="name" required />
+            Ihr Name: <input type="text" name="name" required />
           </label>
         </p>
         <p>
           <label>
-            Your Email: <input type="email" name="email" required />
+            Ihre E-Mail: <input type="email" name="email" required />
           </label>
         </p>
         <p>
           <label>
-            Subject: <input type="text" name="subject" required />
+            Betreff: <input type="text" name="subject" required />
           </label>
         </p>
         <p>
           <label>
-            Message: <textarea name="message" required></textarea>
+            Nachricht: <textarea name="message" required></textarea>
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button type="submit">Senden</button>
         </p>
       </form>
     </div>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">Zurück zur Startseite</Link>
   </Layout>
 )
 
-export const Head = () => <Seo title="Contact Us" />
+export const Head = () => <Seo title="Kontakt" />
 
 export default ContactPage
