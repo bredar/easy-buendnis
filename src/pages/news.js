@@ -19,12 +19,18 @@ const AktuellesPage = ({ data }) => {
         {posts.map(post => {
           const title = post.frontmatter.title
           return (
-            <div key={post.id} className={styles.blogPost}>
-              <h2>{title}</h2>
-              <p className={styles.date}>{post.frontmatter.date}</p>
-              <p className={styles.abstract}>{post.excerpt}</p>
-              <Link to={`/blog/${post.id}`}>Weiterlesen</Link>
-            </div>
+            <Link
+              to={`/blog/${post.id}`}
+              className={styles.blogPostLink}
+              key={post.id}
+            >
+              <article className={styles.blogPost}>
+                <h2>{title}</h2>
+                <p className={styles.date}>{post.frontmatter.date}</p>
+                <p className={styles.abstract}>{post.excerpt}</p>
+                <span className={styles.readMore}>Weiterlesen</span>
+              </article>
+            </Link>
           )
         })}
       </div>
@@ -34,16 +40,13 @@ const AktuellesPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { id: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         id
-        excerpt
+        excerpt(pruneLength: 150)
         frontmatter {
           title
           date(formatString: "DD.MM.YYYY")
-        }
-        headings(depth: h1) {
-          value
         }
       }
     }

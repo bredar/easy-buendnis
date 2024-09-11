@@ -47,7 +47,6 @@ const ContactPage = () => (
         </p>
       </form>
     </div>
-    <Link to="/">Zurück zur Startseite</Link>
   </Layout>
 )
 

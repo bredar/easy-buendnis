@@ -46,20 +46,29 @@
 
 .textCenter {
   text-align: center;
-  padding: 4rem 1rem;
-  background-color: #f0f0f0;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.textCenter h1 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 0.5rem;
 }
 
 .intro {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #666;
 }
 
 .mainContent {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 .button {
@@ -137,15 +146,48 @@ button[type="submit"]:hover {
 
 .blogPost {
   margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.blogPost:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blogPost h2 {
+  color: #0056b3;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .date {
   color: #666;
   font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .abstract {
   margin-top: 0.5rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.readMore {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0056b3;
+}
+
+.blogPostLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.blogPostLink:hover {
+  background-color: #f0f0f0;
 }
