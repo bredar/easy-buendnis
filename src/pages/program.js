@@ -21,14 +21,14 @@ const ProgramPage = () => (
       <h2>Kernpunkte unseres Programms</h2>
 
       <h3>1. Vereinfachung der Bürokratie</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>Digitalisierung und Automatisierung von Verwaltungsprozessen</li>
         <li>Reduzierung von Formularen und Anträgen auf das Nötigste</li>
         <li>Einführung eines zentralen Bürgerportals für alle Behördengänge</li>
       </ul>
 
       <h3>2. Arbeit und Freizeit im Einklang</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>Förderung der 4-Tage-Arbeitswoche</li>
         <li>Unterstützung von Homeoffice und flexiblen Arbeitszeiten</li>
         <li>
@@ -37,7 +37,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>3. Nachhaltigkeit leicht gemacht</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>
           Ausbau des öffentlichen Nahverkehrs mit Fokus auf
           Benutzerfreundlichkeit
@@ -50,7 +50,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>4. Bildung für die Zukunft</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>
           Modernisierung des Bildungssystems mit Fokus auf digitale Kompetenzen
         </li>
@@ -62,7 +62,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>5. Gesundheit und Wohlbefinden</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>Ausbau der präventiven Gesundheitsversorgung</li>
         <li>Förderung von Work-Life-Balance und mentaler Gesundheit</li>
         <li>Investitionen in Grünflächen und Erholungsgebiete in Städten</li>
@@ -159,7 +159,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>13. Zukunftsorientierte Verkehrspolitik</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>
           Ausbau des öffentlichen Nahverkehrs mit Fokus auf Vernetzung und
           Benutzerfreundlichkeit

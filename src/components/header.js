@@ -1,10 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `white`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -12,32 +13,42 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1rem 1.0875rem`,
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+      <Link to="/" style={{ width: "100px" }}>
+        <StaticImage
+          src="../images/logo.png"
+          loading="eager"
+          width={100}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt="Easy Bündnis Logo"
+        />
+      </Link>
+      <nav style={{ flex: 1, textAlign: "center" }}>
+        <Link to="/program" style={{ color: `black`, marginRight: `1rem` }}>
+          Programm
         </Link>
-      </h1>
-      <nav>
-        <Link to="/" style={{ color: `white`, marginRight: `1rem` }}>
-          Home
-        </Link>
-        <Link to="/program" style={{ color: `white`, marginRight: `1rem` }}>
-          Program
-        </Link>
-        <Link to="/about-us" style={{ color: `white`, marginRight: `1rem` }}>
+        <Link to="/about-us" style={{ color: `black`, marginRight: `1rem` }}>
           About Us
         </Link>
-        <Link to="/contact" style={{ color: `white` }}>
+        <Link to="/contact" style={{ color: `black`, marginRight: `1rem` }}>
           Contact
+        </Link>
+        <Link
+          to="/donate"
+          style={{
+            color: `white`,
+            backgroundColor: `#0056b3`,
+            padding: `0.5rem 1rem`,
+            borderRadius: `5px`,
+          }}
+        >
+          Spenden
         </Link>
       </nav>
     </div>

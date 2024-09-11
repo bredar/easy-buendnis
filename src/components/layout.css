@@ -222,3 +222,27 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+
+/* Custom styles for checkboxes */
+.checkbox-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.checkbox-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.checkbox-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  background-color: #fff;
+}

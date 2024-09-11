@@ -1,7 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -9,22 +7,12 @@ import * as styles from "../components/index.module.css"
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/logo.png"
-        loading="eager"
-        width={200}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="Easy Bündnis Logo"
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>Easy Bündnis</h1>
-
       <p className={styles.intro}>
         Auf nach Utopia - gemeinsam, einfach, besser!
       </p>
     </div>
     <div className={styles.mainContent}>
+      <h1>Easy Bündnis</h1>
       <h2>Unsere Vision</h2>
       <p>
         Das Easy Bündnis steht für eine Politik der Einfachheit, des
@@ -33,7 +21,7 @@ const IndexPage = () => (
         das Leben für alle einfacher und angenehmer machen.
       </p>
       <h2>Unsere Kernpunkte</h2>
-      <ul>
+      <ul className="checkbox-list">
         <li>Vereinfachung der Bürokratie</li>
         <li>Arbeit und Freizeit im Einklang</li>
         <li>Nachhaltigkeit leicht gemacht</li>
