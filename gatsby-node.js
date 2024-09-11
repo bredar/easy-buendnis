@@ -5,7 +5,7 @@
  */
 
 const path = require("path")
-
+const { createFilePath } = require(`gatsby-source-filesystem`)
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
