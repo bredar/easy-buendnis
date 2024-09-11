@@ -1,0 +1,53 @@
+.site-header {
+  background-color: #663399; /* Ersetzen Sie dies mit der tatsächlichen Farbe Ihres Logos */
+  padding: 1rem 0;
+}
+
+.header-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.0875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  color: #74ae09;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-image {
+  height: 40px; /* Passen Sie die Größe nach Bedarf an */
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #74ae09;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

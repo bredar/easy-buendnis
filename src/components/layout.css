@@ -243,3 +243,7 @@ pre tt:after {
   font-size: 18px;
   color: var(--color-primary);
 }
+.site-header {
+  background-color: #f4f1ea; /* Ersetzen Sie dies mit der tatsächlichen Farbe Ihres Logos */
+  margin-bottom: 1.45rem;
+}

@@ -32,6 +32,12 @@ const DonatePage = () => {
     transform: selectedAmount === amount ? "translateY(-2px)" : "none",
   })
 
+  const donationOptions = [
+    "Ihre Spende hilft uns, unsere Arbeit fortzusetzen.",
+    "Jeder Beitrag macht einen Unterschied.",
+    "Danke für Ihre Unterstützung!",
+  ]
+
   return (
     <Layout>
       <div className={styles.textCenter}>
@@ -119,7 +125,7 @@ const DonatePage = () => {
             }}
           />
         </form>
-        <ul>
+        <ul className="checkbox-list">
           {donationOptions.map((option, index) => (
             <li key={index}>{option}</li>
           ))}

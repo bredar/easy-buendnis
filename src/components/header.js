@@ -1,54 +1,29 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import PropTypes from "prop-types"
+import "./header.css"
+import logo from "../images/logo.png" // Stellen Sie sicher, dass der Pfad korrekt ist
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `white`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1rem 1.0875rem`,
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      <Link to="/" style={{ width: "100px" }}>
-        <StaticImage
-          src="../images/logo.png"
-          loading="eager"
-          width={100}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt="Easy Bündnis Logo"
-        />
-      </Link>
-      <nav style={{ flex: 1, textAlign: "center" }}>
-        <Link to="/program" style={{ color: `black`, marginRight: `1rem` }}>
+  <header className="site-header">
+    <div className="header-content">
+      <h1 style={{ margin: 0 }}>
+        <Link to="/" className="logo-link">
+          <img src={logo} alt={siteTitle} className="logo-image" />
+        </Link>
+      </h1>
+      <nav>
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+        <Link to="/program" className="nav-link">
           Programm
         </Link>
-        <Link to="/about-us" style={{ color: `black`, marginRight: `1rem` }}>
-          About Us
-        </Link>
-        <Link to="/contact" style={{ color: `black`, marginRight: `1rem` }}>
-          Contact
-        </Link>
-        <Link
-          to="/donate"
-          style={{
-            color: `white`,
-            backgroundColor: `#0056b3`,
-            padding: `0.5rem 1rem`,
-            borderRadius: `5px`,
-          }}
-        >
+        <Link to="/donate" className="nav-link">
           Spenden
+        </Link>
+        <Link to="/contact" className="nav-link">
+          Kontakt
         </Link>
       </nav>
     </div>
