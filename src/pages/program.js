@@ -69,7 +69,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>6. Innovative Wirtschaftspolitik</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>
           Unterstützung von Start-ups und innovativen Unternehmen durch
           vereinfachte Gründungsprozesse
@@ -81,7 +81,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>7. Direkte Demokratie und Transparenz</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>Einführung regelmäßiger Bürgerentscheide zu wichtigen Themen</li>
         <li>
           Transparente Darstellung aller politischen Entscheidungsprozesse
@@ -90,7 +90,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>8. Migration und Integration</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>Einführung eines Punktesystems für qualifizierte Einwanderung</li>
         <li>Vereinfachung und Beschleunigung von Asylverfahren</li>
         <li>
@@ -103,7 +103,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>9. Kriminalitätsbekämpfung und öffentliche Sicherheit</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>Fokus auf Prävention durch Bildung und soziale Programme</li>
         <li>
           Investitionen in moderne Polizeiarbeit und Deeskalationstraining
@@ -117,7 +117,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>10. Altersvorsorge und demographischer Wandel</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>
           Flexibilisierung des Rentenalters mit Anreizen für längere
           Berufstätigkeit
@@ -133,7 +133,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>11. Gesundheitssystem und Krankenkasse</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>Einführung einer Bürgerversicherung für alle</li>
         <li>Förderung von Präventionsmaßnahmen durch Bonusprogramme</li>
         <li>Digitalisierung des Gesundheitswesens zur Effizienzsteigerung</li>
@@ -141,7 +141,7 @@ const ProgramPage = () => (
       </ul>
 
       <h3>12. Moderne Verteidigung und Friedenssicherung</h3>
-      <ul>
+      <ul className="checkbox-list">
         <li>
           Umstrukturierung der Armee zu einer flexiblen Einsatztruppe für
           Katastrophenschutz und internationale Friedensmissionen

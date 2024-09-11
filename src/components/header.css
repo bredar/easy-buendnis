@@ -1,6 +1,5 @@
 .site-header {
-  background-color: #663399; /* Ersetzen Sie dies mit der tatsächlichen Farbe Ihres Logos */
-  padding: 1rem 0;
+  padding: 0;
 }
 
 .header-content {
@@ -15,7 +14,7 @@
 .logo-link {
   color: #74ae09;
   text-decoration: none;
-  display: flex;
+  display: inline-block;
   align-items: center;
   transition: opacity 0.3s ease;
 }
@@ -25,8 +24,10 @@
 }
 
 .logo-image {
-  height: 40px; /* Passen Sie die Größe nach Bedarf an */
+  width: 200px; /* Increase this value to make the logo larger */
+  height: auto; /* Maintain aspect ratio */
   margin-right: 10px;
+  margin-bottom: 0;
 }
 
 .site-title {

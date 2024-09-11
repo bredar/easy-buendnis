@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import "./header.css"
 import logo from "../images/logo.png" // Stellen Sie sicher, dass der Pfad korrekt ist
 
